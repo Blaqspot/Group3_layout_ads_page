@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Group 3</title>
+
+    <script src="script.js"></script>
+    
+    
+    
+</head>
+<body>
+    <!--logo and nav bar-->
+  <aside class="navbar">
+    <div class="logo">
+        <h3>Logo</h3>
+    </div>
+    <!--navbar tabs-->
+    <div class="nav">
+    <li onclick="hide_dropdown(),hide_menu()"><i class="fa fa-home"></i></li>
+    <li onclick="hide_dropdown(),hide_menu()"><i class="fa fa-user-tie"></i></li>
+    <li onclick="show_dropdown(),hide_menu()"><i class="fa fa-address-book"></i></li>
+    </div>
+  </aside>
+
+    <!--first dropdown-->
+    <div id="drop" class="aboutdrop">
+        <li onclick="hide_menu()">Portfolio <i class="fa fa-pic"></i></li>
+        <li onclick="hide_menu()"><i class="fa fa-phone"></i></li>
+        <li onclick="show_menu()"><i class="fa fa-people-carry"></i></li>
+    </div>
+
+    <!--second dropdown-->
+    <div id="dropdown" onclick="hide_menu(),hide_dropdown()" class="service">
+        <li><i class="fa fa-gear"></i></li>
+        <li><i class="fa fa-gift"></i></li>
+    </div>
+
+  <!--header layout-->
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+  <!--body layout-->
+    <div class="body">
+        <h1>Body/Content</h1>
+    </div>
+
+   <!--footer layout-->
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+
+
+    <div class="ads">
+
+        <div class="adsbox">
+            <img src="images/baking.jpg" alt="" width="100%" height="100%">
+        </div>
+
+        <div class="adsbox">
+            <img src="images/bread.jpg" alt="" width="100%" height="100%">
+        </div>
+        <div class="adsbox">
+            <img src="images/free.jpg" alt="" width="100%" height="100%">
+        </div>
+        <div class="adsbox">
+            <img src="images/globe.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

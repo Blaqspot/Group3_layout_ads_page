@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*side navbar*/
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 15%;
+    background-color: wheat;
+    height: 85vh;
+    flex-direction: column;
+    gap: 180px;
+    color: black;
+    list-style: none; 
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: bolder;
+}
+/*side navbar logo*/
+.img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*nav bar tabs*/
+.nav{
+    text-align: center;
+}
+.nav li {
+padding: 10px;
+}
+.nav li:hover{
+    color: red;
+    cursor: pointer;
+}
+/*header layout*/
+.header{
+    align-items: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+/*body layout*/
+.body{
+    align-items: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    background-color: rgb(2, 2, 61);  
+}
+/*footer layout*/
+.footer{
+    align-items: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    background-color: black;  
+}
+/*ads styling*/
+.ads{
+   /* background: red; */
+    position: absolute;
+    height: auto;
+    width: 15%;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15em;
+}
+
+.adsbox{
+    width:100%;
+    height:15vh;
+}
+
+.adsbox img{
+    border-radius: 12px;
+}
+
+/*first dropdown*/
+.aboutdrop{
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 8em;
+    bottom: 16em;
+    list-style: none;
+    display: none;
+    border-radius: 12px;
+    box-shadow: 0px 6px 9px 0px whitesmoke;
+}
+.aboutdrop li{
+    padding: 10px;
+}
+.aboutdrop li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;  
+}
+/*second dropdown*/
+.service{
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 15em;
+    bottom: 13em;
+    list-style: none; 
+    display: none; 
+    border-radius: 12px; 
+    box-shadow: 0px 6px 9px 0px whitesmoke ;
+}
+.service li{
+    padding: 10px;
+}
+.service li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/*for smaller screen*/
+@media screen and (max-width:650px) {
+   /*showing only the logos of the ads on smaller screen*/
+    .ads div:not(.break){
+        display: none;
+    }
+
+    .ads{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+/*second dropdown on smaller screen*/
+.service{
+        background-color: black;
+        color: white;
+        position: fixed;
+        left: 12.3em;
+        bottom: 9em;
+        list-style: none; 
+        display: none;   
+    }
+/*first dropdown on smaller screen*/
+.about{
+        background-color: black;
+        color: white;
+        position: fixed;
+        left: 6em;
+        bottom: 12em;
+        list-style: none;
+        display: none;
+    }
+}
